@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenshinArt</title>
+    <link rel="shortcut icon" href="./static/image/1692391931_5a7dce932cded249dfc0f2d5cedd43df.png" />
+    <link rel="stylesheet" href="./static/style/style.css">
+    <link rel="stylesheet" href="./static/style/stylefont.css">
+    <link rel="stylesheet" href="./static/style/styleindex.css">
+    <link rel="stylesheet" href="./static/style/styleMedia.css">
+</head>
+<!-- 
+    Осталось добавить:
+        1. Адаптив:
+            index.html
+            about.html
+            characters.html
+        2. Добавить вкладку "Оружие"
+        3. Добавить вкладку "Созвездие"
+        4. Добавить вкладку "Таланты"
+        5. Добавить список оружия
+        6. Добавить список Созвездия
+        7. Добавить список Талантов
+        8. Добавить все артефакты 10/210
+        9. Добавить всех персонажей 9/69
+        10. Добавить возвращение к предыдущему персонажу (LocalStorage)
+        11. Поменять дизайн:
+            Главное меню
+            Обо мне
+            Выбор персонажа
+            Меню персонажа
+        12. Добавить смену языка
+        13. Оптимизировать код в characters.js
+        14. Оптимизировать код в ....css
+        15. Переписать на react (после конкурса)
+ -->
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header">
+                <div class="navigation">
+                    <div class="logo">
+                        <img src="./static/image/1692391931_5a7dce932cded249dfc0f2d5cedd43df.png" alt="logo">
+                        <span>GenshinArt</span>
+                    </div>
+                    <nav>
+                        <div class="item">
+                            <a href="#">Главная</a>
+                        </div>
+                        <div class="item">
+                            <a href="./static/pages/about.html">Обо мне</a>
+                        </div>
+                        <div class="item" id="music">
+                            <img src="./static/media/speaker_volume_loud_sound_icon_229445.svg" alt="music">
+                            <div>X</div>
+                        </div>
+                    </nav>
+                    <div class="burgerMenu">
+                        <img src="./static/media/List_Text_Menu_Numbers_String_Burger_icon-icons.com_67909.png" alt="">
+                    </div>
+                    <nav class="mobile">
+                        <div class="burgerClose">X</div>
+                        <div class="item">
+                            <a href="">Главная</a>
+                        </div>
+                        <div class="item">
+                            <a href="./static/pages/about.html">Обо мне</a>
+                        </div>
+                        <div class="item" id="music">
+                            <img src="./static/media/speaker_volume_loud_sound_icon_229445.svg" alt="music">
+                            <div>X</div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="media">
+            <div class="submitplay">
+                <div>Нажмите чтобы продолжить</div>
+            </div>
+            <div class="buttonplay">
+                <a href="./static/pages/characters.html">Перейти</a>
+            </div>
+            <div class="quote">
+                <blockquote>
+                    <i class="textQuite"></i>
+                </blockquote>
+                <p><i class="nameQuite"></i></p>
+            </div>
+            <audio class="audioMusic" autoplay loop>
+                <source src="./static/media/[Dream Aria] Genshin Impact Nighttime_Evening Title Screen Main Menu BGM OST EXTENDED (720p).mp4" type="audio/mpeg">
+            </audio>
+            <video autoplay loop muted width="100%" id="videobg">
+                <source src="./static/media/[Dream Aria] Genshin Impact Nighttime_Evening Title Screen Main Menu BGM OST EXTENDED (720p).mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+        </div>
+    </div>
+    <main>
+        <div class="wrapper">
+            <div class="main">
+                <div class="sliderSection">
+                    <h1 class="page-title">Мини гайд</h1>
+                    <div class="slider-container">
+                        <div class="slider">
+                        <img src="./static/media/slider1New.png" alt="slider1">
+                        <img src="./static/media/slider2New.png" alt="slider2">
+                        <img src="./static/media/slider3New.png" alt="slider3">
+                        <img src="./static/media/slider4New.png" alt="slider4">
+                        </div>
+                        <button class="prev-button">&lt;</button>
+                        <button class="next-button">&gt;</button>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="bannerText">
+                        <h1>О игре</h1>
+                        <p><b>Genshin Impact</b> — компьютерная игра в жанре action-adventure с открытым миром и элементами RPG, разработанная китайской компанией miHoYo Limited. Игра распространяется посредством цифровой дистрибуции по модели free-to-play, но имеет внутриигровой магазин, использующий реальную валюту.</p>
+                    </div>
+                    <div class="bannerImg">
+                        <img src="./static/image/1280_news_1621369765979211_0.webp" alt="banner">
+                    </div>
+                    <div class="bannerblur"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./static/script/quote.js"></script>
+    <script src="./static/script/script.js"></script>
+</body>
+</html>
